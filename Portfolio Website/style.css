@@ -1,0 +1,150 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    display: flex;
+    min-height: 100vh;
+    flex-direction: column;
+    background-color: #0a192f;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+nav {
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    margin-top: 50px;
+    width: 80%;
+    height: 60px;
+    border-radius: 30px;
+    background-color: #1a3057; 
+    margin: 50px auto;
+    box-shadow: 0 0 30px rgba(255, 255, 255, 0.2);
+}
+
+nav a {
+    display: flex-end;
+    font-size: 20px;
+    font-weight: bold;
+    text-decoration: none;
+    color: white;
+    margin-right: 50px;
+    position: relative;
+    transition: all 0.3s ease;
+}
+
+nav a::after {
+  content: "";
+  position: absolute;
+  left: 0;
+  bottom: -5px;
+  width: 0%;
+  height: 2px;
+  background-color: white;
+  transition: width 0.3s ease;
+}
+
+nav a:hover::after {
+  width: 100%;
+}
+
+nav h1 {
+    margin-right: auto;
+    font-size: 30px;
+    color: white;
+    margin-left: 40px;
+}
+
+header {
+    color: #E5E4E2;
+    margin-left: 11vw;
+    margin-right: 11vw;
+    margin-top: 3vw;
+    font-size: clamp(1.5rem, 2.3vw, 4vw);
+}
+
+header h3 {
+    color: #BEBFC5;
+    font-size: clamp(1.2rem, 1.5vw, 2vw);
+}
+
+header p {
+    margin-top: 4vw;
+    font-size: clamp(1.2rem, 1.5vw, 3vw);
+    
+}
+
+ul {
+    display: flex;
+    margin-left: 11vw;
+    margin-right: 11vw;
+    align-items: flex-start;
+    gap: 0.6vw;
+}
+
+ul li{
+    display: flex;
+}
+
+a {
+    outline: none;
+}
+
+ion-icon {
+    font-size: clamp(2rem, 2vw, 6rem);
+    color: #E5E4E2;
+    margin-top: 1.3vw;
+}
+
+.btn {
+  display: flex-end;  
+  margin-left: auto;
+  margin-right: 10%;
+  width: 140px;
+  height: 50px;
+  background: linear-gradient(to top, #00154c, #12376e, #23487f);
+  color: #fff;
+  border-radius: 50px;
+  border: none;
+  outline: none;
+  cursor: pointer;
+  position: relative;
+  box-shadow: 0 15px 30px rgba(0, 0, 0, 0.5);
+  overflow: hidden;
+}
+
+.btn span {
+  font-size: 13px;
+  font-weight: bold;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+  transition: top 0.5s;
+}
+
+.btn-text-one {
+  position: absolute;
+  width: 100%;
+  top: 50%;
+  left: 0;
+  transform: translateY(-50%);
+}
+
+.btn-text-two {
+  position: absolute;
+  width: 100%;
+  top: 150%;
+  left: 0;
+  transform: translateY(-50%);
+}
+
+.btn:hover .btn-text-one {
+  top: -100%;
+  border: white;
+}
+
+.btn:hover .btn-text-two {
+  top: 50%;
+  border: white;
+}
